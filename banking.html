@@ -10,57 +10,45 @@
 
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-16">Let's Get Some <span
-                class="font-semibold	 text-purple-600">Money!!!</span></h1>
+        <h1 class="text-5xl text-center mt-8">Let's Get some<span class="font-semibold text-purple-600"> Money
+            </span>!!!</h1>
     </header>
     <main class="w-3/4 mx-auto">
-        <section class="mt-8">
-            <div class="grid grid-cols-3 gap-4  text-white">
-                <div class="bg-cyan-500 p-8 rounded   ">
+        <section class="mt-12">
+            <div class="grid grid-cols-3  gap-4 ">
+                <div class="bg-blue-400 rounded p-8 text-white">
                     <h3 class="text-2xl">Deposite</h3>
                     <h4 class="text-4xl">$<span id="deposite-totall">00</span></h4>
                 </div>
-                <div class="bg-yellow-500 p-8 rounded   ">
+                <div class="bg-red-400 rounded p-8 text-white">
                     <h3 class="text-2xl">Withdrow</h3>
-                    <h4 class="text-4xl">$00</h4>
+                    <h4 class="text-4xl">$<span id="widthraw-totall">00</span></h4>
                 </div>
-                <div class="bg-blue-500 p-8 rounded   ">
+                <div class="bg-yellow-400 rounded p-8 text-white">
                     <h3 class="text-2xl">Balance</h3>
                     <h4 class="text-4xl">$<span id="balance-totall">1200</span></h4>
                 </div>
 
-
             </div>
         </section>
-        <section>
+        <section class="mt-8">
             <div class="grid grid-cols-2 gap-4">
-                <div class="bg-red-600 mt-10 rounded p-5">
-                    <h3 class="text-3xl text-white">Please Deposite</h3>
-                    <div>
-                        <input id="deposite-input" class="border-2 block w-3/4 mb-5 border-rose-600 rounded px-2 mt-5 "
-                            type="text" placeholder="How Much Dollar You Want To Deposite?">
-
-                        <button id="deposite-button"
-                            class="bg-amber-600 p-2 rounded font-medium text-white py-3 px-6">Deposite</button>
-                    </div>
+                <div class="bg-red-100 p-8 rounded">
+                    <h3 class="text-2xl">Please Deposite</h3>
+                    <input id="deposite-input" class="border border-gray-400 rounded block w-3/4 mb-4 px-2" type="text"
+                        placeholder="How Much Amount You Want To Deposit">
+                    <button id="deposite-button"
+                        class="bg-yellow-600 px-4 py-2 rounded text-white font-medium">Submit</button>
                 </div>
-                <div class="bg-red-600 mt-10 rounded p-5">
-                    <h3 class="text-3xl text-white">Please Widthrow</h3>
-                    <div>
-                        <input id="widthrow-input" class="border-2 block w-3/4 mb-5 border-rose-600 rounded px-2 mt-5 "
-                            type="text" placeholder="How Much Dollar You Want To Widthrow?">
-
-                        <button id="Widthrow-button"
-                            class="bg-amber-600 p-2 rounded font-medium text-white py-3 px-6">Widthrow</button>
-                    </div>
+                <div class="bg-green-100 p-8 rounded">
+                    <h3 class="text-2xl">Please Withdrow</h3>
+                    <input id="Withdrow-input" class="border border-gray-400 rounded block w-3/4 mb-4 px-2" type="text"
+                        placeholder="How Much Amount You Want To Withdrow">
+                    <button id="Withdrow-button"
+                        class="bg-yellow-600 px-4 py-2 rounded text-white font-medium">Submit</button>
                 </div>
-
             </div>
-
-
         </section>
-
-
     </main>
     <script src="js/banking.js"></script>
 </body>
